@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/SY.jpg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+      integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+      crossorigin=""
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+      integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+      crossorigin=""
+    ></script>
+    <script defer src="script.js"></script>
+    <title>Relive</title>
+  </head>
+  <body>
+    <div class="dashboard">
+      <h1>Your Precious Moments</h1>
+
+      <div class="memory_input">
+        <div class="title_input">
+          <label for="title">Title:</label>
+          <input type="text" id="title" maxlength="30" autofocus />
+        </div>
+        <div class="desc_input">
+          <label for="desc">Your memory will be preserved</label>
+          <textarea
+            id="desc"
+            placeholder="I can keep secrets as well!"
+          ></textarea>
+        </div>
+        <button class="button">ADD</button>
+      </div>
+      <div class="memories"></div>
+    </div>
+    <div id="map"></div>
+  </body>
+</html>

@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@600&family=Shadows+Into+Light&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  font-family: "Cormorant SC", serif;
+  color: white;
+}
+
+.dashboard {
+  height: 100vh;
+  width: 30vw;
+  background-color: #0f0f0f;
+}
+.dashboard h1 {
+  padding-top: 1rem;
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  border-bottom: 1px solid white;
+}
+#map {
+  width: 70vw;
+  height: 100vh;
+}
+.leaflet-popup .leaflet-popup-content-wrapper {
+  border-left: 8px solid #257eca;
+  background-color: #0f0f0f;
+  color: white;
+  border-radius: 5px;
+  padding-right: 0.6rem;
+}
+
+.leaflet-popup .leaflet-popup-content {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+}
+
+.memory_input {
+  height: 0;
+  opacity: 0;
+  margin: 1rem;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px black;
+  padding: 1.5rem;
+  font-size: 2rem;
+  background-color: #2d3439;
+  transition: opacity 500ms linear;
+}
+.title_input {
+  display: flex;
+  flex-direction: column;
+}
+#title {
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  background-color: aliceblue;
+  text-align: center;
+  height: 3.5rem;
+  border-radius: 8px;
+  width: 80%;
+}
+#title:focus {
+  outline: none;
+}
+.desc_input {
+  padding-bottom: 1rem;
+  padding-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+#desc {
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  padding: 8px;
+  background-color: aliceblue;
+  border-radius: 8px;
+  width: 80%;
+  height: 15rem;
+}
+.button {
+  font-size: 1.8rem;
+  border-radius: 8px;
+  padding: 0.3rem 1.5rem;
+  background-color: aliceblue;
+  display: flex;
+  cursor: pointer;
+  transition: background-color 300ms linear;
+  font-family: inherit;
+  transform: scale(1);
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.274);
+  transition: transform 200ms linear, box-shadow 200ms linear;
+}
+
+button:focus {
+  outline: none;
+}
+
+.pressed {
+  box-shadow: 0px 0px 0px 0px;
+  transform: scale(0.95);
+}
+.button:hover {
+  background-color: #257eca;
+}
+
+.memory {
+  position: relative;
+  border-left: 1.5rem solid #257eca;
+  margin: 1rem;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px black;
+  padding: 1.5rem;
+  font-size: 2rem;
+  background-color: #2d3439;
+}
+
+.memory_title {
+  text-align: center;
+  font-size: 2.5rem;
+}
+.fa-delete-left {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.fa-delete-left:hover {
+  color: red;
+}
+.memory_desc {
+  font-family: "Shadows Into Light", cursive;
+  text-align: left;
+  font-size: 1.8rem;
+}
