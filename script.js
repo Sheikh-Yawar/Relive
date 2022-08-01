@@ -54,9 +54,7 @@ const renderMemoryTile = (memory) => {
 };
 
 const renderMarker = (memory) => {
-  const marker = L.marker([memory.lat, memory.long], {
-    draggable: true,
-  })
+  const marker = L.marker([memory.lat, memory.long])
     .addTo(map)
     .bindPopup(
       L.popup({
