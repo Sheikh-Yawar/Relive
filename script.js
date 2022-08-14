@@ -165,7 +165,7 @@ if (navigator.geolocation) {
     function (position) {
       const latitude = position.coords.latitude;
       const longitude = position.coords.longitude;
-      map = L.map("map").setView([latitude, longitude], 20);
+      map = L.map("map").setView([latitude,longitude], 17);
 
       L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
         maxZoom: 19,
